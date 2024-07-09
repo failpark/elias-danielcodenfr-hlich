@@ -178,6 +178,7 @@ function draw() {
 
 	chaser.display();
 	flock.run(chaser);
+	drawObstacles();
 
 	let nearestDist = Infinity;
 	for (let boid of flock.boids) {
